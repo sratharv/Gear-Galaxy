@@ -1,165 +1,150 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
 }
 
 body{
-    background:#000;
-    color:#fff;
+background:#000;
+color:white;
 }
 
-/* ================= HEADER ================= */
 header{
-    position:fixed;
-    top:0;
-    width:100%;
-    height:70px;
-    background:#000;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 20px;
-    border-bottom:1px solid #222;
-    z-index:1000;
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#000;
+z-index:1000;
 }
 
 .logo{
-    font-size:22px;
-    font-weight:700;
+font-size:28px;
+font-weight:bold;
 }
 
 .logo span{
-    color:#f5c400;
+color:#f5c400;
 }
 
-.menu{
-    position:relative;
-    font-size:24px;
-    cursor:pointer;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
 }
 
-.menu-box{
-    position:absolute;
-    top:35px;
-    left:0;
-    background:#111;
-    padding:10px;
-    display:none;
-    border-radius:6px;
-}
-
-.menu:hover .menu-box{
-    display:block;
-}
-
-.menu-box a{
-    display:block;
-    color:#fff;
-    padding:6px 10px;
-    font-size:14px;
-    text-decoration:none;
-}
-
-.menu-box a:hover{
-    background:#222;
-}
-
-/* ================= HERO ================= */
 .hero{
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+color:#f5c400;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
 }
 
 .hero button{
-    padding:14px 30px;
-    border:none;
-    border-radius:30px;
-    background:#fff;
-    cursor:pointer;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#f5c400;
+cursor:pointer;
 }
 
-/* ================= SERVICES ================= */
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+padding:80px 20px;
+text-align:center;
+flex-wrap:wrap;
+}
+
+.stat-box h2{
+font-size:40px;
+color:#f5c400;
+}
+
 .section{
-    padding:90px 20px;
+padding:80px 20px;
 }
 
 .section h2{
-    text-align:center;
-    margin-bottom:40px;
+text-align:center;
+margin-bottom:40px;
 }
 
 .services{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
 }
 
 .card{
-    background:#111;
-    border-radius:18px;
-    overflow:hidden;
+background:#111;
+padding:30px;
+border-radius:15px;
+transition:.3s;
 }
 
-.card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #f5c400;
 }
 
-.content{
-    padding:20px;
-}
-
-/* ================= CONTACT ================= */
 .contact{
-    padding:70px 20px;
-    text-align:center;
-    background:#111;
+padding:80px 20px;
+text-align:center;
+background:#111;
 }
 
-.contact p{
-    color:#ccc;
-    margin-top:8px;
+#contactForm{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
-/* ================= FOOTER ================= */
+#contactForm input,
+#contactForm textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
+#contactForm button{
+padding:12px;
+background:#f5c400;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
 footer{
-    text-align:center;
-    padding:20px;
-    color:#777;
-}
-.show{
-    display:block !important;
+text-align:center;
+padding:20px;
 }
 
-.top-btn{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    padding:10px 15px;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
-    display:none;
-}
-
-.dark-btn{
-    position:fixed;
-    bottom:80px;
-    right:20px;
-    padding:10px;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
+#successMsg{
+color:lime;
+margin-top:15px;
 }
