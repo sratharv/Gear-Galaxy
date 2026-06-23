@@ -139,3 +139,27 @@ footer{
     padding:20px;
     color:#777;
 }
+.show{
+    display:block !important;
+}
+
+.top-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+}
+
+.dark-btn{
+    position:fixed;
+    bottom:80px;
+    right:20px;
+    padding:10px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+}
