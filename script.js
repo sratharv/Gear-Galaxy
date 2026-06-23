@@ -406,22 +406,22 @@ const reviews = [
 
 {
 text:"Amazing Quality Products!",
-name:"Rahul"
+name:"shekhar"
 },
 
 {
 text:"Best Car Modification Store.",
-name:"Ankit"
+name:"Anshika"
 },
 
 {
 text:"Very Fast Delivery & Genuine Products.",
-name:"Aman"
+name:"Atharv"
 },
 
 {
 text:"Loved The Alloy Wheels Collection.",
-name:"Rohit"
+name:"Roshni"
 }
 
 ];
